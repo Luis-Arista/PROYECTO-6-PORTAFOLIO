@@ -1,5 +1,6 @@
 import React , { useState } from 'react'
 import './Banner.css'
+import { BsCodeSlash } from 'react-icons/bs'
 
 const Banner = () => {
 
@@ -11,11 +12,16 @@ const Banner = () => {
   return (
     <section className='seccion_banner'>
         <div className="contenedor_banner">
-          <div className="titulo">
-              <h2 onMouseEnter={() => setTituloUno('Sobre mi')} onMouseLeave={() => setTituloUno('Luis')} >{tituloUno}</h2>
-              <h2 onMouseEnter={() => setTituloDos('Mi trabajo')} onMouseLeave={() => setTituloDos('Diseño')} >{tituloDos}</h2>
-              <h2 onMouseEnter={() => setTituloTres('Habilidades')} onMouseLeave={() => setTituloTres('Desarrollo')} >{tituloTres}</h2>
-              <h2 onMouseEnter={() => setTituloCuatro('Contacto')} onMouseLeave={() => setTituloCuatro('Web')} >{tituloCuatro}</h2>
+          <div className="banner_titulo">
+              <a href='/#' onMouseEnter={() => setTituloUno('Sobre mi')} onMouseLeave={() => setTituloUno('Luis')} >{tituloUno}</a>
+              <a href='/#' onMouseEnter={() => setTituloDos('Mi trabajo')} onMouseLeave={() => setTituloDos('Diseño')} >{tituloDos}</a>
+              <a href='/#' onMouseEnter={() => setTituloTres('Habilidades')} onMouseLeave={() => setTituloTres('Desarrollo')} >{tituloTres}</a>
+              <a href='/#' onMouseEnter={() => setTituloCuatro('Contacto')} onMouseLeave={() => setTituloCuatro('Web')} >{tituloCuatro}</a>
+          </div>
+          <div className="banner_img">
+            <div className="banner_img_contenedor">
+              <BsCodeSlash className='banner_img_contenedor_icono' />
+            </div>
           </div>
         </div>
     </section>

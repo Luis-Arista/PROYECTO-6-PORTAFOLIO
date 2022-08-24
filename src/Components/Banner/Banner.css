@@ -1,30 +1,60 @@
-.contenedor_banner{
+.seccion_banner{
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: absolute;
     top: 0;
     background-color: rgb(17, 17, 17);
+}
+
+.contenedor_banner{
+    height: 100%;
+    max-width: 93rem;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.titulo{
-    width: 300px;
-    background-color: blue;
+.banner_titulo{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px;
 }
 
-.titulo h2{
+
+.banner_titulo a{
     color: white;
     transition: all 0.2s;
     margin: 0;
-    font-size: 50px;
+    font-size: 90px;
     cursor: pointer;
-    background-color: red;
+    text-decoration: none;
+    font-weight: bold;
     
 }
 
-.titulo h2:hover{
+.banner_titulo a:hover{
     transform: translateX(15px);
+   /*  color: rgb(16, 188, 82); */
+   color: #f4a020;
+}
+
+
+.banner_img{
+    padding: 10px;
+
+}
+
+.banner_img_contenedor{
+    padding: 5px;
+}
+
+.banner_img_contenedor_icono{
+    fill: white;
+    width: 250px;
+    height: 250px;
 }
