@@ -1,0 +1,30 @@
+.contenedor_banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    width: 300px;
+    background-color: blue;
+}
+
+.titulo h2{
+    color: white;
+    transition: all 0.2s;
+    margin: 0;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: red;
+    
+}
+
+.titulo h2:hover{
+    transform: translateX(15px);
+}
