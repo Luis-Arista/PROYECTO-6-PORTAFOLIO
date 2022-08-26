@@ -1,0 +1,154 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-width: 280px;
+    padding: 15px ;
+}
+
+.formulario_nombre_mail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+
+}
+
+.formulario_mensaje{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formulario_nombre , .formulario_email{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mensaje{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.formulario_nombre input , .formulario_email input{
+    appearance: none;
+    background-color: rgb(38, 38, 38);
+    border-radius: none;
+    outline: none ;
+    box-sizing: border-box;
+    padding: 0 2.5em 0 1em;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 0.025em;
+    height: 2.75em;
+    border: 2px solid rgb(38, 38, 38);
+
+}
+
+.mensaje_campo , .email_campo , .nombre_campo{
+    width: 100%;
+    position: relative;
+}
+.nombre_campo_icon , .email_campo_icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: rgb(122, 122, 122);
+}
+
+.mensaje_campo_icon{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    fill: rgb(122, 122, 122);
+}
+
+.mensaje textarea{
+    appearance: none;
+    background-color: rgb(38, 38, 38);
+    border-radius: none;
+    outline: none ;
+    box-sizing: border-box;
+    padding: 1em 2.5em 1em 1em;
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    letter-spacing: 0.025em;
+    border: 2px solid rgb(38, 38, 38);
+
+}
+ 
+
+ .formulario_nombre label , .formulario_email label ,.mensaje label{
+    color: white;
+    font-size: 25px;
+    letter-spacing: 0.25em;
+    box-sizing: border-box;
+    padding: 5px 0;
+
+}  
+
+.formulario_nombre input:focus , .formulario_email input:focus , .mensaje textarea:focus {
+    border: 2px solid white;
+}
+
+
+
+.formulario_botones{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.formulario_botones button{
+    padding: 20px 25px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.enviar{
+    background-color:  #ba7a1a;
+    color:white;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.borrar{
+    background-color: rgb(57, 57, 57) ;
+    color: #ba7a1a;
+    border: 1px solid #ba7a1a;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.enviar:hover{
+    background-color:  #f4a020;
+}
+
+.borrar:hover{
+    color: #f4a020;
+    border: 1px solid #f4a020;
+
+}

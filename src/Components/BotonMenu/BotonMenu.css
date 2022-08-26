@@ -1,6 +1,6 @@
 .contenedor_boton{
-    width: 40px;
-    height: 35px;
+    width: 60px;
+    height: 55px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@
 .barra{
     display: block;
     width: 90%;
-    height: 3px;
+    height: 6px;
     margin: 4px 0;
     background-color: white;
     transition: all 0.3s;
@@ -21,7 +21,7 @@
 
 .barra_arriba{
     margin: 0 auto;
-    transform: translateY(3px) rotate(-45deg);
+    transform: translateY(6px) rotate(-45deg);
 }
 .barra_medio{
     margin: 0 auto;
@@ -32,5 +32,5 @@
 }
 .barra_abajo{
     margin: 0 auto;
-    transform:translateY(-3px)  rotate(45deg);
+    transform:translateY(-6px)  rotate(45deg);
 }

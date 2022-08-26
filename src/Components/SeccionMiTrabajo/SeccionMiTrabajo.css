@@ -1,0 +1,67 @@
+#mi_trabajo{
+    background-color: #2e3842;
+}
+
+
+.mi_trabajo_contenedor{
+    margin: 0 auto;
+}
+
+
+.trabajos_izquierda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.075);
+
+}
+
+.trabajos_derecha{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.015);
+
+}
+
+.trabajos_izquierda_imagen , .trabajos_derecha_imagen{
+    width: 40%;
+}
+
+.trabajos_izquierda_imagen img , .trabajos_derecha_imagen img {
+    width: 100%;
+}
+
+.trabajos_izquierda_info , .trabajos_derecha_info{
+    width: 60%;
+    box-sizing: border-box;
+    padding: 15px;
+    
+}
+
+.trabajos_izquierda_info h3 , .trabajos_derecha_info h3{
+    color: white;
+    font-size: 60px;
+}
+
+.trabajos_izquierda_info p , .trabajos_derecha_info p{
+    color: white;
+    font-size: 40px;
+}
+
+
+.trabajos_izquierda_info a , .trabajos_derecha_info a{
+    color:  rgba(255, 255, 255, 0.532);
+    font-size: 40px;
+    text-decoration: none;
+    padding: 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.532);
+    transition: all 0.5s;
+    border-radius: 5px;
+}
+
+.trabajos_izquierda_info a:hover , .trabajos_derecha_info a:hover{
+    color:  rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}

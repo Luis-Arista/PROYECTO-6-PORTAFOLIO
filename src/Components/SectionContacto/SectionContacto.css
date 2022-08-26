@@ -1,0 +1,73 @@
+.contacto_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgb(17, 17, 17) ;
+    background-color: rgb(57, 57, 57);
+    height: 900px;
+
+}
+
+.contacto_tarjeta{
+    width: 100%;
+    text-decoration: none;
+}
+
+.formulario{
+    width: 50%;
+    border-right: 2px solid rgb(17, 17, 17);
+    box-sizing: border-box;
+    padding: 10px;
+    height: 900px;
+
+
+}
+
+.info_contacto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+
+.info_contacto_email , .info_contacto_whatsapp , .info_contacto_telefono{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.info_contacto_email , .info_contacto_whatsapp {
+    border-bottom: 2px solid rgb(17, 17, 17) ;
+}
+
+.info_contacto_icon{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.contacto_icono{
+    fill: #f4a020;
+    width: 50px;
+    height: 50px;
+}
+
+.info_contacto_texto h4{
+    color: white;
+    font-size: 30px;
+}
+
+.info_contacto_texto p{
+    color: white;
+    font-size: 25px;
+}

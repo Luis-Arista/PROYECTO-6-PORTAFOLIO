@@ -1,0 +1,178 @@
+#Habilidades{
+    background-color: rgb(17, 17, 17);
+    height: 100vh;
+}
+
+
+
+.habilidades_contenedor{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.habilidades_card{
+    backdrop-filter: blur(5px);
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid rgb(65, 65, 65);
+    border-bottom:  2px solid rgb(65, 65, 65);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 900px;
+    overflow: hidden;
+}
+
+.habilidades_card::before{
+    content: '';
+    background-color: red;
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    transform: skewX(45deg) translateX(1400px);
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+
+
+}
+
+.habilidades_card:hover::before{
+    transform: skewX(45deg) translateX(-1400px);
+}
+
+.habilidad{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.habilidad_icon{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidad_texto{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.habilidad_texto h3{
+    margin: 0;
+   color: white;
+   font-size: 2rem;
+   cursor: context-menu;
+
+}
+
+.habilidad_texto p{
+   margin: 0;
+   color: white;
+   font-size: 1.5rem;
+   cursor: context-menu;
+
+}
+
+.icon{
+    width: 80px;
+    height: auto;
+    fill: white;
+}
+
+.icono_express{
+    color: white;
+    font-size: 50px;
+    cursor: context-menu;
+}
+
+.letras p {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    left: -500px;
+    transform: translateX(0);
+    animation: letrasAnimacion  10s linear  infinite ;
+    min-width: 550px;
+    cursor: context-menu;
+
+}
+
+.letras:nth-child(1) p{
+    top: 250px;
+    animation-delay: 1s;
+}
+
+.letras:nth-child(2) p{
+    top: 350px;
+    animation-delay: 2s;
+}
+
+.letras:nth-child(3) p{
+    top: 550px;
+    animation-delay: 3s;
+}
+
+.letras:nth-child(4) p{
+    top: 750px;
+    animation-delay: 4s;
+}
+
+.letras:nth-child(5) p{
+    top: 300px;
+    animation-delay: 5s;
+}
+.letras:nth-child(6) p{
+    top: 400px;
+    animation-delay: 6s;
+}
+.letras:nth-child(7) p{
+    top: 500px;
+    animation-delay: 7s;
+}
+.letras:nth-child(8) p{
+    top: 950px;
+    animation-delay: 8s;
+}
+.letras:nth-child(9) p{
+    top: 650px;
+    animation-delay: 9s;
+}
+.letras:nth-child(10) p{
+    top: 850px;
+    animation-delay: 10s;
+}
+.letras:nth-child(11) p{
+    top: 1040px;
+    animation-delay: 11.5s;
+}
+.letras:nth-child(12) p{
+    top: 800px;
+    animation-delay: 12.5s;
+}
+
+
+
+@keyframes letrasAnimacion {
+    0%{ left: -500px;}
+    100%{ left: 3500px; }
+}

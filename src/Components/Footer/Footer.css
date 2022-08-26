@@ -1,0 +1,47 @@
+footer{
+    background-color: rgb(57, 57, 57);
+}
+
+.footer_contenedor{
+    max-width: 93rem;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.redes_sociales{
+    display: flex;
+}
+
+.redes_sociales a{
+    margin-right: 15px;
+    border: 1px solid #ba7a1a;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.footer_icon{
+    fill: #ba7a1a;
+    width: 30px;
+    height: auto;
+}
+
+.redes_sociales a:hover{
+    border: 1px solid #f4a020;
+    background-color:#f4a020;
+    transform: scale(1.1);
+}
+
+.redes_sociales a:hover .footer_icon{
+    fill: white;
+}
+
+.footer_teto p{
+    color: white;
+    font-size: 20px;
+}

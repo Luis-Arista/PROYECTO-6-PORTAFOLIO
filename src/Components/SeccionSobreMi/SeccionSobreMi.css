@@ -1,0 +1,11 @@
+#sobre_mi{
+    background-color: rgb(38, 38, 38);
+}
+.sobre_mi_info{
+    background-color: rgb(48, 48, 48);
+    width: 85rem;
+    margin: 0 auto ;
+    padding: 15px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
