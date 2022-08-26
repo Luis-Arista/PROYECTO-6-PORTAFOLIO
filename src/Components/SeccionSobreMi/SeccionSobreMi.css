@@ -1,11 +1,66 @@
 #sobre_mi{
-    background-color: rgb(38, 38, 38);
+    background-color: rgb(17, 17, 17);
 }
+
+.sobre_mi_contenedor{
+    max-width: 93rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
 .sobre_mi_info{
-    background-color: rgb(48, 48, 48);
-    width: 85rem;
-    margin: 0 auto ;
-    padding: 15px;
-    border-radius: 5px;
+    width: 50%;
+}
+
+
+
+.sobre_mi_imagen{
+    width: 50%;
+    transform: translateY(700px);
     transition: all 0.5s;
+
+}
+
+.sobre_mi_imagen img{
+    width: 90%;
+}
+
+.Sobre_mi_titulo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.Sobre_mi_titulo h1{
+    margin: 0;
+    color: rgba(255, 255, 255, 0.175);
+    font-size: 150px;
+    position: absolute;
+    top: 4px;
+}
+
+.Sobre_mi_titulo h2{
+    margin: 0;
+    color: white;
+    font-size: 50px;
+    z-index: 2;
+    font-weight: 400;
+
+}
+
+.sobre_mi_descripcion{
+    padding: 15px;
+
+}
+
+.sobre_mi_descripcion p {
+    color: white;
+    margin: 0;
+    font-size: 25px;
 }

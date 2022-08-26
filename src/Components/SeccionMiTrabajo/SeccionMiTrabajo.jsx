@@ -1,4 +1,4 @@
-import React from 'react'
+import React  from 'react'
 import './SeccionMiTrabajo.css'
 import landing from '../assets/img/landing.jpeg'
 import CRUD from '../assets/img/CRUD.jpeg'
@@ -7,11 +7,15 @@ import RESTAURANTE from '../assets/img/RESTAURANTE.jpeg'
 import TIENDA from '../assets/img/TIENDA.jpeg'
 
 const SeccionMiTrabajo = () => {
+
+
+  
+
   return (
     <section id='mi_trabajo'>
        <div className="mi_trabajo_contenedor">
             <div className=" trabajos_izquierda mi_trabajo_uno">
-                <div className="trabajos_izquierda_imagen">
+                <div className="trabajos_izquierda_imagen landing">
                     <img src={landing} alt="" />
                 </div>
                 <div className="trabajos_izquierda_info">
@@ -24,7 +28,7 @@ const SeccionMiTrabajo = () => {
                 </div>
             </div>
             <div className=" trabajos_derecha mi_trabajo_dos">
-                <div className="trabajos_derecha_imagen">
+                <div className="trabajos_derecha_imagen crud">
                     <img src={CRUD} alt="" />
                 </div>
                 <div className="trabajos_derecha_info">
@@ -35,8 +39,8 @@ const SeccionMiTrabajo = () => {
                     <a target='_blank' rel="noopener noreferrer"   href="https://luis-arista.github.io/PROYECTO-2-app-CRUD/">Ver Demo</a>
                 </div>
             </div>
-            <div className=" trabajos_izquierda mi_trabajo_uno">
-                <div className="trabajos_izquierda_imagen">
+            <div  className=" trabajos_izquierda mi_trabajo_uno">
+                <div className="trabajos_izquierda_imagen dashboard">
                     <img src={DASHBOARD} alt="" />
                 </div>
                 <div className="trabajos_izquierda_info">
@@ -47,8 +51,8 @@ const SeccionMiTrabajo = () => {
                     <a target={'_blank'} rel="noopener noreferrer"  href="https://luis-arista.github.io/PROYECTO-3-Dashboard-pokemon/">Ver Demo</a>
                 </div>
             </div>
-            <div className=" trabajos_derecha mi_trabajo_dos">
-                <div className="trabajos_derecha_imagen">
+            <div  className=" trabajos_derecha mi_trabajo_dos">
+                <div className="trabajos_derecha_imagen app_web">
                     <img src={RESTAURANTE} alt="" />
                 </div>
                 <div className="trabajos_derecha_info">
@@ -60,7 +64,7 @@ const SeccionMiTrabajo = () => {
                 </div>
             </div>
             <div className=" trabajos_izquierda mi_trabajo_uno">
-                <div className="trabajos_izquierda_imagen">
+                <div className="trabajos_izquierda_imagen e_comers">
                     <img src={TIENDA} alt="" />
                 </div>
                 <div className="trabajos_izquierda_info">
@@ -73,6 +77,12 @@ const SeccionMiTrabajo = () => {
                     <a target={'_blank'} rel="noopener noreferrer"  href="https://magical-haupia-f0d8e1.netlify.app">Ver Demo</a>
                 </div>
             </div>
+       </div>
+       <div className="rectangulos">
+            <div className="rectangulo"></div>
+            <div className="rectangulo"></div>
+            <div className="rectangulo"></div>
+            <div className="rectangulo"></div>
        </div>
     </section>
   )

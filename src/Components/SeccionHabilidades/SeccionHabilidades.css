@@ -15,6 +15,15 @@
 }
 
 
+.Habilidades_letras_contenedor{
+    position: relative;
+    height: 800px;
+    position: absolute;
+    width: 100%;
+}
+
+
+
 .habilidades_card{
     backdrop-filter: blur(5px);
     border-top: 2px solid white;
@@ -118,55 +127,55 @@
 }
 
 .letras:nth-child(1) p{
-    top: 250px;
+    top: 0%;
     animation-delay: 1s;
 }
 
 .letras:nth-child(2) p{
-    top: 350px;
+    top: 8.33%;
     animation-delay: 2s;
 }
 
 .letras:nth-child(3) p{
-    top: 550px;
+    top: 33.32% ;
     animation-delay: 3s;
 }
 
 .letras:nth-child(4) p{
-    top: 750px;
+    top: 41.65%;
     animation-delay: 4s;
 }
 
 .letras:nth-child(5) p{
-    top: 300px;
+    top: 16.66%;
     animation-delay: 5s;
 }
 .letras:nth-child(6) p{
-    top: 400px;
+    top: 24.99%;
     animation-delay: 6s;
 }
 .letras:nth-child(7) p{
-    top: 500px;
+    top: 49.98%;
     animation-delay: 7s;
 }
 .letras:nth-child(8) p{
-    top: 950px;
+    top: 74.97%;
     animation-delay: 8s;
 }
 .letras:nth-child(9) p{
-    top: 650px;
+    top: 58.31%;
     animation-delay: 9s;
 }
 .letras:nth-child(10) p{
-    top: 850px;
+    top: 66.64%;
     animation-delay: 10s;
 }
 .letras:nth-child(11) p{
-    top: 1040px;
+    top: 55%;
     animation-delay: 11.5s;
 }
 .letras:nth-child(12) p{
-    top: 800px;
+    top: 83.30%;
     animation-delay: 12.5s;
 }
 

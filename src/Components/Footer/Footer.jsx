@@ -15,7 +15,7 @@ const Footer = () => {
                 <a href="/#"><BsGithub className='footer_icon'/></a>
                 <a href="/#"><BsLinkedin className='footer_icon'/></a>
             </div>
-            <div className="footer_teto">
+            <div className="footer_texto">
                 <p>© Luis Arista</p>
             </div>
         </div>

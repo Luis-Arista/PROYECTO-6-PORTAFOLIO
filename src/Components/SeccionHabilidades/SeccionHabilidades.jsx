@@ -14,41 +14,43 @@ const SeccionHabilidades = () => {
   return (
      <section id='Habilidades'>
         <div className="habilidades_contenedor">
-            <div className="letras">
-               <p>{"<h1>Hola</h1>"}</p>
-            </div>
-            <div className="letras">
-               <p>{"npm start"}</p>
-            </div>
-            <div className="letras">
-               <p>{"const js = ( ) =>console.log('Hola')"}</p>
-            </div>
-            <div className="letras">
-               <p>{"background-color: #fff"}</p>
-            </div>
-            <div className="letras">
-               <p>{"import { useState } from 'react"}</p>
-            </div>
-            <div className="letras">
-               <p>{"Axios.get( )"}</p>
-            </div>
-            <div className="letras">
-               <p>{"<section></section>"}</p>
-            </div>
-            <div className="letras">
-               <p>{"display: flex"}</p>
-            </div>
-            <div className="letras">
-               <p>{"let saludo = 'Hola'"}</p>
-            </div>
-            <div className="letras">
-               <p>{"npm run dev"}</p>
-            </div>
-            <div className="letras">
-               <p>{"Axios.post( )"}</p>
-            </div>
-            <div className="letras">
-               <p>{"express.Router( )"}</p>
+            <div className="Habilidades_letras_contenedor">
+               <div className="letras">
+                  <p>{"<h1>Hola</h1>"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"npm start"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"const js = ( ) =>console.log('Hola')"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"background-color: #fff"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"import { useState } from 'react"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"Axios.get( )"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"<section></section>"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"display: flex"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"let saludo = 'Hola'"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"npm run dev"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"Axios.post( )"}</p>
+               </div>
+               <div className="letras">
+                  <p>{"express.Router( )"}</p>
+               </div>
             </div>
             <div className="habilidades_card">
                <div className="habilidad">

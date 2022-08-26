@@ -1,10 +1,22 @@
 #mi_trabajo{
-    background-color: #2e3842;
+    background-color: rgb(17, 17, 17);
+    position: relative;
+    overflow: hidden;
+    padding: 150px 0;
+
 }
+
+
 
 
 .mi_trabajo_contenedor{
     margin: 0 auto;
+    max-width: 93rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -12,7 +24,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.075);
+    height:550px;
+    z-index: 3;
 
 }
 
@@ -21,7 +34,8 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.015);
+    height:550px;
+    z-index: 3;
 
 }
 
@@ -31,23 +45,24 @@
 
 .trabajos_izquierda_imagen img , .trabajos_derecha_imagen img {
     width: 100%;
+    
 }
 
 .trabajos_izquierda_info , .trabajos_derecha_info{
     width: 60%;
     box-sizing: border-box;
     padding: 15px;
-    
 }
 
 .trabajos_izquierda_info h3 , .trabajos_derecha_info h3{
     color: white;
     font-size: 60px;
+    margin: 0;
 }
 
 .trabajos_izquierda_info p , .trabajos_derecha_info p{
     color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
@@ -64,4 +79,55 @@
 .trabajos_izquierda_info a:hover , .trabajos_derecha_info a:hover{
     color:  rgb(255, 255, 255);
     border: 2px solid rgb(255, 255, 255);
+}
+
+ 
+
+.rectangulo{
+    width: 250px;
+    height: 250px;
+    border: 5px solid #f49f2050;
+    position: absolute ;
+    transform: rotate(45deg);
+    z-index: 2;
+    animation: animacionRombo  1s alternate-reverse  infinite ;    
+
+}
+
+.rectangulo:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    top: 70px;
+    left: 0;
+}
+
+.rectangulo:nth-child(2) {
+    top: 1500px;
+    left: 0;
+    width: 600px;
+    height: 600px;
+    animation-delay: 0.2s;
+
+}
+
+.rectangulo:nth-child(3) {
+    top: 800px;
+    right: 0;
+    width: 900px;
+    height: 900px;
+    animation-delay: 0.4s;
+}
+
+.rectangulo:nth-child(4) {
+    bottom: 50px;
+    right: 10px;
+    width: 250px;
+    height: 250px;
+    animation-delay: 0.6s;
+}
+
+@keyframes animacionRombo {
+    
+    0%{ box-shadow: 0 0 0px 0px #f49f20; }
+    100%{ box-shadow: 0 0 10px 1px #f49f20 }
 }

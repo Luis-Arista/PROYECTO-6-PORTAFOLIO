@@ -59,7 +59,7 @@ const FormularioContacto = () => {
             <div className="mensaje">
                 <label >CUENTAME SOBRE TU PROYECTO</label>
                 <div className="mensaje_campo">
-                    <textarea value={mensaje} onChange={(e) => setMensaje( e.target.value )} name="mensaje" id="mensaje" cols="30" rows="15"></textarea>
+                    <textarea value={mensaje} onChange={(e) => setMensaje( e.target.value )} name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
                     <BsFillChatRightTextFill className='mensaje_campo_icon' />
                 </div>
             </div>
