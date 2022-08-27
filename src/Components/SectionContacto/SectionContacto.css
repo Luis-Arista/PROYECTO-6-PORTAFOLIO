@@ -4,7 +4,7 @@
     align-items: center;
     border-bottom: 2px solid rgb(17, 17, 17) ;
     background-color: rgb(57, 57, 57);
-
+    overflow: hidden;
 }
 
 .contacto_tarjeta{
@@ -14,7 +14,6 @@
 
 .formulario{
     width: 50%;
-    border-right: 2px solid rgb(17, 17, 17);
     box-sizing: border-box;
     padding: 10px;
 
@@ -27,7 +26,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    height: 725px;
+    border-left: 2px solid rgb(17, 17, 17);
+    padding: 10px 0;
 
 }
 
@@ -38,7 +38,7 @@
     justify-content: flex-start;
     align-items: center;
     box-sizing: border-box;
-    padding: 15px;
+
 }
 
 .info_contacto_email , .info_contacto_whatsapp {
@@ -46,12 +46,11 @@
 }
 
 .info_contacto_icon{
-    margin: 30px;
+    margin: 0 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    padding: 15px;
 }
 
 .contacto_icono{
@@ -62,10 +61,46 @@
 
 .info_contacto_texto h4{
     color: white;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .info_contacto_texto p{
     color: white;
-    font-size: 25px;
+    font-size: 20px;
+}
+
+@media ( max-width: 1024px){
+   
+    .contacto_contenedor{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+
+    .formulario{
+        width: 100%;
+       
+    
+    
+    }
+    
+    .info_contacto{
+        width: 100%;
+     
+    }
+    
+
+}
+
+
+@media ( max-width: 700px){
+    
+    .info_contacto_texto h4{
+        font-size: 20px;
+    }
+    
+    .info_contacto_texto p{
+        font-size: 15px;
+    }
+
 }

@@ -15,14 +15,14 @@ form{
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 5px;
 
 }
 
 .formulario_mensaje{
     width: 100%;
     box-sizing: border-box;
-    padding: 15px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +52,10 @@ form{
     border-radius: none;
     outline: none ;
     box-sizing: border-box;
-    padding: 0 2.5em 0 1em;
+    padding: 5px 50px 5px 5px;
     width: 100%;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 0.025em;
     height: 2.75em;
     border: 2px solid rgb(38, 38, 38);
@@ -68,18 +68,18 @@ form{
 }
 .nombre_campo_icon , .email_campo_icon{
     position: absolute;
-    top: 15px;
-    right: 10px;
-    width: 40px;
+    top: 0px;
+    right: 5px;
+    width: 30px;
     height: 40px;
     fill: rgb(122, 122, 122);
 }
 
 .mensaje_campo_icon{
     position: absolute;
-    top: 15px;
+    top: 5px;
     right: 10px;
-    width: 40px;
+    width: 30px;
     height: 40px;
     fill: rgb(122, 122, 122);
 }
@@ -90,10 +90,10 @@ form{
     border-radius: none;
     outline: none ;
     box-sizing: border-box;
-    padding: 1em 2.5em 1em 1em;
+    padding: 5px 50px 5px 5px;
     width: 100%;
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 0.025em;
     border: 2px solid rgb(38, 38, 38);
 
@@ -102,7 +102,7 @@ form{
 
  .formulario_nombre label , .formulario_email label ,.mensaje label{
     color: white;
-    font-size: 25px;
+    font-size: 15px;
     letter-spacing: 0.25em;
     box-sizing: border-box;
     padding: 5px 0;
@@ -111,6 +111,7 @@ form{
 
 .formulario_nombre input:focus , .formulario_email input:focus , .mensaje textarea:focus {
     border: 2px solid white;
+    
 }
 
 
@@ -122,9 +123,9 @@ form{
 }
 
 .formulario_botones button{
-    padding: 20px 25px;
+    padding: 10px 15px;
     margin-right: 20px;
-    font-size: 25px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -150,5 +151,27 @@ form{
 .borrar:hover{
     color: #f4a020;
     border: 1px solid #f4a020;
+
+}
+
+
+@media ( max-width: 700px){
+    
+    
+    .formulario_nombre_mail{
+        flex-direction: column;
+         
+    }
+
+    .formulario_nombre , .formulario_email{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .formulario_botones button{
+        
+        margin-bottom: 5px;
+         
+    }
 
 }

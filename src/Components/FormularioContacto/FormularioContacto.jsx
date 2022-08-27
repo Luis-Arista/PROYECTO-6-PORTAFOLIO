@@ -11,19 +11,24 @@ const FormularioContacto = () => {
     const [ nombre , setNombre ] = useState('')
     const [ email , setEmail ] = useState('')
     const [ mensaje , setMensaje ] = useState('')
+    const [ regularMail , setRegularMail ] = useState(false)
 
     const enviar = async( e ) => {
         e.preventDefault()
         if( nombre !== '' && email !== '' && mensaje !== '' ) {
-            let url = 'http://localhost:4000/contacto'
-            let info = {
-                nombre,
-                email,
-                mensaje
+            if( regularMail ){
+                let url = 'http://localhost:4000/contacto'
+                let info = {
+                    nombre,
+                    email,
+                    mensaje
+                }
+                await axios.post(url , info)
+                .then((res) => console.log(res.data))
+                reiniciarCampos(e)
+            }else{
+                alert('por favor revise su correo')
             }
-            await axios.post(url , info)
-            .then((res) => console.log(res.data))
-            reiniciarCampos(e)
         }else{
             alert('Por favor llena todos los campos')
         }
@@ -35,6 +40,21 @@ const FormularioContacto = () => {
         setNombre('')
         setEmail('')
         setMensaje('')
+        setRegularMail(false)
+    }
+
+    //probando expresiones regulares
+
+    const expresiones = {
+        correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    }
+
+    const validacionCorreo = (e) => {
+        if(expresiones.correo.test(e)){
+            setRegularMail(true)
+        }else {
+            setRegularMail(false)
+        }
     }
 
   return (
@@ -50,7 +70,7 @@ const FormularioContacto = () => {
             <div className="formulario_email">
                 <label >EMAIL</label>
                 <div className="email_campo">
-                    <input value={email} onChange={(e) => setEmail( e.target.value )}  type="email" name='email' id="email" autoComplete='email'  />
+                    <input style={ regularMail ? { border: '2px solid green'} : {}} onKeyUp={(e) => validacionCorreo(e.target.value)}  value={email} onChange={(e) => setEmail( e.target.value )}  type="email" name='email' id="email" autoComplete='email'  />
                     <BsAt className='email_campo_icon'  />
                 </div>
             </div>

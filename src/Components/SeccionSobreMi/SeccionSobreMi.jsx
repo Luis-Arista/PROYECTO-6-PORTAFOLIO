@@ -5,7 +5,7 @@ import about from '../assets/img/about.jpeg'
 const SeccionSobreMi = () => {
 
   let [ scroll , setScroll ] = useState('')
-  let [ alto ] = useState(window.innerHeight)
+  let [ alto , setAlto ] = useState(window.innerHeight)
   const [ flag , setFlag ] = useState(false)
   
 
@@ -18,13 +18,17 @@ const SeccionSobreMi = () => {
     window.addEventListener('scroll' , scrollParallax)
 
     useEffect( () => {
-      if(scroll > (alto - 550) ){
+      if(scroll > (alto - 350) ){
         setFlag(true)
-        console.log(scroll , ',' , alto);
       }else{
         setFlag(false)
       }
     },[scroll , alto])
+
+    if (window.innerHeight !== alto) {
+      setAlto(window.innerHeight)
+    }
+
 
   return (
     <section id='sobre_mi'>
@@ -35,11 +39,12 @@ const SeccionSobreMi = () => {
           <div className="sobre_mi_info">
               <div className="Sobre_mi_titulo">
                 <h1>Sobre mi</h1>
-                <h2>Hola me llamo Luis</h2>
+                <h2>Hola soy Luis</h2>
               </div>
               <div className="sobre_mi_descripcion">
-                <p>Soy desarrollador web full-stack independiente desde 2019 y me considero como una persona con un lado tanto creativo como logico.</p>
-                <p>Cuando conoci el dessarrollo web me di cuenta de qu </p>
+                <p>Soy desarrollador web full-stack independiente desde 2019 y me gusta incursionar en las nuevas tecnologías para el desarrollo web. </p>
+                <p>Cuando conoci el desarrollo me inspiro a crear y crecer en este nuevo campo y poder indagar en las nuevas tecnologías y tendencias, logrando así convertirlo en mi pasión.</p>
+                <p>Me encanta crear diseños web intuitivos, dinámicos y prácticos captando la atención del usuario. Todos mis diseños son adaptables a cualquier dispositivo.</p>
               </div>
           </div>
         </div> 

@@ -15,6 +15,7 @@ footer{
 .redes_sociales{
     display: flex;
     width: 50%;
+    justify-content: center;
 }
 
 .redes_sociales a{
@@ -47,10 +48,29 @@ footer{
 
 .footer_texto{
     width: 50%;
+    text-align: center;
 }
 
 .footer_texto p{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     margin: 0;
+}
+
+@media ( max-width: 700px){
+
+    .redes_sociales a{
+        width: 40px;
+        height: 30px;
+        border: none;
+     }
+     
+
+    
+    .footer_icon{
+        fill: #ba7a1a;
+        width: 20px;
+        height: auto;
+    }
+
 }

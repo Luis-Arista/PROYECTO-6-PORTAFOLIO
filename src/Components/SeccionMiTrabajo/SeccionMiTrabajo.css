@@ -24,8 +24,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:550px;
     z-index: 3;
+    margin: 55px 0;
 
 }
 
@@ -34,35 +34,45 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    height:550px;
     z-index: 3;
+    margin: 55px 0;
+
 
 }
 
 .trabajos_izquierda_imagen , .trabajos_derecha_imagen{
-    width: 40%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .trabajos_izquierda_imagen img , .trabajos_derecha_imagen img {
-    width: 100%;
-    
+    width: 90%;
+    border-radius: 10px;
+
 }
 
 .trabajos_izquierda_info , .trabajos_derecha_info{
     width: 60%;
     box-sizing: border-box;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .trabajos_izquierda_info h3 , .trabajos_derecha_info h3{
     color: white;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0;
 }
 
 .trabajos_izquierda_info p , .trabajos_derecha_info p{
     color: white;
     font-size: 30px;
+    text-align: justify;
 }
 
 
@@ -74,6 +84,7 @@
     border: 2px solid rgba(255, 255, 255, 0.532);
     transition: all 0.5s;
     border-radius: 5px;
+
 }
 
 .trabajos_izquierda_info a:hover , .trabajos_derecha_info a:hover{
@@ -130,4 +141,104 @@
     
     0%{ box-shadow: 0 0 0px 0px #f49f20; }
     100%{ box-shadow: 0 0 10px 1px #f49f20 }
+}
+
+
+
+@media ( max-width: 1265px){
+   
+
+    
+    .trabajos_izquierda_info a , .trabajos_derecha_info a{
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+
+    .trabajos_izquierda_info h3 , .trabajos_derecha_info h3{
+ 
+        font-size: 40px;
+ 
+    }
+
+    .trabajos_izquierda_info p , .trabajos_derecha_info p{
+        color: white;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 900px){
+
+    
+    
+    
+    
+    
+    
+    
+    .trabajos_izquierda{
+        flex-direction: column;
+        
+    }
+    
+    .trabajos_derecha{
+        flex-direction: column;
+    
+    }
+    
+    .trabajos_izquierda_imagen , .trabajos_derecha_imagen{
+        width: 100%;
+    }
+    
+  
+    
+    .trabajos_izquierda_info , .trabajos_derecha_info{
+        width: 100%;
+    }
+    
+    .trabajos_izquierda_info h3 , .trabajos_derecha_info h3{
+         font-size: 30px;
+        
+    }
+    
+    .trabajos_izquierda_info p , .trabajos_derecha_info p{
+         font-size: 20px;
+    }
+    
+     
+    
+    
+   
+    
+    .rectangulo:nth-child(1) {
+        width: 200px;
+        height: 200px;
+        top: 70px;
+        left: -80px;
+    }
+    
+    .rectangulo:nth-child(2) {
+        top: 2000px;
+        left: -150px;
+        width: 300px;
+        height: 300px;
+        animation-delay: 0.2s;
+    
+    }
+    
+    .rectangulo:nth-child(3) {
+        top: 800px;
+        right: -150px;
+        width: 400px;
+        height: 400px;
+        animation-delay: 0.4s;
+    }
+    
+    .rectangulo:nth-child(4) {
+        bottom: 50px;
+        right: 10px;
+        width: 250px;
+        height: 250px;
+        animation-delay: 0.6s;
+    }
+
 }

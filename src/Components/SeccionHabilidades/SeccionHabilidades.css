@@ -1,12 +1,12 @@
 #Habilidades{
     background-color: rgb(17, 17, 17);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
 
 .habilidades_contenedor{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
 
 .Habilidades_letras_contenedor{
     position: relative;
-    height: 800px;
+    height: 500px;
     position: absolute;
     width: 100%;
 }
@@ -35,33 +35,41 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 900px;
+    width: 100%;
+    max-width: 400px;
     overflow: hidden;
 }
 
 .habilidades_card::before{
     content: '';
-    background-color: red;
     display: block;
-    width: 50px;
-    height: 50px;
     position: absolute;
-    width: 900px;
-    height: 900px;
-    transform: skewX(45deg) translateX(1400px);
+    max-width: 400px;
+    width: 90%;
+    height: 400px;
+    transform: skewX(45deg) translateX(600px);
     background: rgba(255, 255, 255, 0.5);
     transition: 0.5s;
 
 
 }
+ 
 
 .habilidades_card:hover::before{
-    transform: skewX(45deg) translateX(-1400px);
+    transform: skewX(45deg) translateX(-600px);
+}
+
+.habilidades_card_header , .habilidades_card_body, .habilidades_card_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .habilidad{
-    width: 250px;
-    height: 250px;
+    width: 33%;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,15 +78,15 @@
 }
 
 .habilidad_icon{
-    height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+ 
+
 .habilidad_texto{
-    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -87,40 +95,28 @@
 }
 
 .habilidad_texto h3{
-    margin: 0;
-   color: white;
-   font-size: 2rem;
-   cursor: context-menu;
-
-}
-
-.habilidad_texto p{
    margin: 0;
    color: white;
-   font-size: 1.5rem;
+   font-size: 20px;
    cursor: context-menu;
 
 }
+ 
 
 .icon{
-    width: 80px;
+    width: 50px;
     height: auto;
     fill: white;
 }
 
-.icono_express{
-    color: white;
-    font-size: 50px;
-    cursor: context-menu;
-}
 
 .letras p {
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     position: absolute;
     left: -500px;
     transform: translateX(0);
-    animation: letrasAnimacion  10s linear  infinite ;
+    animation: letrasAnimacion  20s linear  infinite ;
     min-width: 550px;
     cursor: context-menu;
 
@@ -128,55 +124,55 @@
 
 .letras:nth-child(1) p{
     top: 0%;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 .letras:nth-child(2) p{
     top: 8.33%;
-    animation-delay: 2s;
+    animation-delay: 4s;
 }
 
 .letras:nth-child(3) p{
     top: 33.32% ;
-    animation-delay: 3s;
+    animation-delay: 6s;
 }
 
 .letras:nth-child(4) p{
     top: 41.65%;
-    animation-delay: 4s;
+    animation-delay: 8s;
 }
 
 .letras:nth-child(5) p{
     top: 16.66%;
-    animation-delay: 5s;
+    animation-delay: 10s;
 }
 .letras:nth-child(6) p{
     top: 24.99%;
-    animation-delay: 6s;
+    animation-delay: 12s;
 }
 .letras:nth-child(7) p{
     top: 49.98%;
-    animation-delay: 7s;
+    animation-delay: 14s;
 }
 .letras:nth-child(8) p{
     top: 74.97%;
-    animation-delay: 8s;
+    animation-delay: 16s;
 }
 .letras:nth-child(9) p{
     top: 58.31%;
-    animation-delay: 9s;
+    animation-delay: 18s;
 }
 .letras:nth-child(10) p{
     top: 66.64%;
-    animation-delay: 10s;
+    animation-delay: 20s;
 }
 .letras:nth-child(11) p{
     top: 55%;
-    animation-delay: 11.5s;
+    animation-delay: 20.5s;
 }
 .letras:nth-child(12) p{
     top: 83.30%;
-    animation-delay: 12.5s;
+    animation-delay: 21.5s;
 }
 
 
@@ -184,4 +180,53 @@
 @keyframes letrasAnimacion {
     0%{ left: -500px;}
     100%{ left: 3500px; }
+}
+
+
+@media (max-width: 1265px){
+
+    .habilidades_card::before{
+        display: none;
+    
+    
+    }
+
+
+}
+
+
+
+@media (max-width: 700px){
+
+    .habilidades_card{
+        width: 75%;
+        overflow: hidden;
+    }
+    
+    
+    
+    .habilidad{
+        width: 33%;
+        height: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+    
+   
+    
+    
+    
+    .habilidad_texto h3{
+       margin: 5px 0;
+       font-size: 12px;
+    
+    }
+     
+    
+    .icon{
+        width: 40px;
+    }
 }

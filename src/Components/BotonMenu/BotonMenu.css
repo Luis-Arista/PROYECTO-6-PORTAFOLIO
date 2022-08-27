@@ -34,3 +34,16 @@
     margin: 0 auto;
     transform:translateY(-6px)  rotate(45deg);
 }
+
+
+@media ( max-width: 1265px){
+   
+
+    
+    .contenedor_boton{
+        width: 50px;
+        height: 45px;
+       
+    }
+
+}

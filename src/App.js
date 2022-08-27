@@ -7,14 +7,18 @@ import SeccionMiTrabajo from './Components/SeccionMiTrabajo/SeccionMiTrabajo';
 import SeccionHabilidades from './Components/SeccionHabilidades/SeccionHabilidades';
 import SectionContacto from './Components/SectionContacto/SectionContacto';
 import Footer from './Components/Footer/Footer';
+import { MenuProvider } from './Context/MenuProvider';
+
 
 
 function App() {
   return (
     <div>
       <header>
-         <Navbar />
-         <Banner />
+        <MenuProvider>
+          <Navbar />
+          <Banner />
+        </MenuProvider>
       </header>
       <main>
         <Element name='Sobre_Mi' >

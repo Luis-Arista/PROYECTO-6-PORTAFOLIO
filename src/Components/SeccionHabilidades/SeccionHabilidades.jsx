@@ -17,7 +17,7 @@ const SeccionHabilidades = () => {
             <div className="Habilidades_letras_contenedor">
                <div className="letras">
                   <p>{"<h1>Hola</h1>"}</p>
-               </div>
+               </div> 
                <div className="letras">
                   <p>{"npm start"}</p>
                </div>
@@ -53,76 +53,82 @@ const SeccionHabilidades = () => {
                </div>
             </div>
             <div className="habilidades_card">
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <ImHtmlFive className='icon'/>
+               <div className="habilidades_card_header">
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <ImHtmlFive className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>HTML</h3>
+                     </div>
                   </div>
-                  <div className="habilidad_texto">
-                     <h3>HTML</h3>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <ImCss3 className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>CSS</h3>
+                     </div>
                   </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <ImCss3 className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>CSS</h3>
-                  </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <SiJavascript className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>Javascript</h3>
-                  </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <SiMongodb className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>Mongo DB</h3>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiJavascript className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>JavaScript</h3>
+                     </div>
                   </div>
                </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <h1 className='icono_express'>EX</h1>
+               <div className="habilidades_card_body">
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiMongodb className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>Mongo DB</h3>
+                     </div>
                   </div>
-                  <div className="habilidad_texto">
-                     <h3>Express</h3>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiNodedotjs className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>Express</h3>
+                     </div>
                   </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <SiReact className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>React</h3>
-                  </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <SiNodedotjs className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>Node.js</h3>
-                  </div>
-               </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <FaNpm className='icon'/>
-                  </div>
-                  <div className="habilidad_texto">
-                     <h3>npm</h3>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiReact className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>React</h3>
+                     </div>
                   </div>
                </div>
-               <div className="habilidad">
-                  <div className="habilidad_icon">
-                     <SiVisualstudiocode className='icon'/>
+               <div className="habilidades_card_footer">
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiNodedotjs className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>Node.js</h3>
+                     </div>
                   </div>
-                  <div className="habilidad_texto">
-                     <h3>VS code</h3>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <FaNpm className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>npm</h3>
+                     </div>
+                  </div>
+                  <div className="habilidad">
+                     <div className="habilidad_icon">
+                        <SiVisualstudiocode className='icon'/>
+                     </div>
+                     <div className="habilidad_texto">
+                        <h3>VS code</h3>
+                     </div>
                   </div>
                </div>
             </div>
