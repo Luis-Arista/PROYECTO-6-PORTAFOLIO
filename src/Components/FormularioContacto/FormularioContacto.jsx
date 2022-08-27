@@ -17,7 +17,7 @@ const FormularioContacto = () => {
         e.preventDefault()
         if( nombre !== '' && email !== '' && mensaje !== '' ) {
             if( regularMail ){
-                let url = 'http://localhost:4000/contacto'
+                let url = 'https://back-end-portafolio.herokuapp.com/contacto'
                 let info = {
                     nombre,
                     email,
