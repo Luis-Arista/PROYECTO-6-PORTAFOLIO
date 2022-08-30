@@ -13,7 +13,7 @@ const FormularioContacto = () => {
     const [ mensaje , setMensaje ] = useState('')
     const [ regularMail , setRegularMail ] = useState(false)
 
-    const enviar = async( e ) => {
+    const enviar = ( e ) => {
         e.preventDefault()
         if( nombre !== '' && email !== '' && mensaje !== '' ) {
             if( regularMail ){
@@ -23,8 +23,7 @@ const FormularioContacto = () => {
                     email,
                     mensaje
                 }
-                await axios.post(url , info)
-                .then((res) => console.log(res.data))
+                axios.post(url , info)
                 reiniciarCampos(e)
             }else{
                 alert('por favor revise su correo')
