@@ -70,7 +70,7 @@ const SeccionMiTrabajo = () => {
                 <div className="trabajos_izquierda_info">
                     <h3>E-commers</h3>
                     <p>
-                        El e-commerce  o aplicacion de comercio electronico se puede definir 
+                        El E-commers o aplicacion de comercio electronico se puede definir 
                         como la venta, compra y distribución de suministro de 
                         algún producto, servicio o información a través de internet.
                     </p>
